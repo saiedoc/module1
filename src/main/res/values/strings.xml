@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">module1</string>
+    <string name="tab_text_1">info</string>
+    <string name="tab_text_2">counter</string>
+    <string name="coursename">Mobile app development</string>
+    <string name="studentname">Saeid Aussi</string>
+    <string name="zero">0</string>
+    <string name="inc">+</string>
+    <string name="clear">C</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
