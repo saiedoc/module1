@@ -14,6 +14,7 @@ public class counterFragment extends Fragment {
 
 
     Button increment;
+    Button decrement;
     Button clear;
     TextView count;
     View view;
@@ -22,6 +23,7 @@ public class counterFragment extends Fragment {
     private void findViews(){
 
         increment = view.findViewById(R.id.increment);
+        decrement = view.findViewById(R.id.decrement);
         clear = view.findViewById(R.id.clear);
         count = view.findViewById(R.id.count);
 
@@ -36,6 +38,19 @@ public class counterFragment extends Fragment {
 
                 int counter = Integer.parseInt(count.getText().toString());
                 counter += 1;
+                count.setText(String.valueOf(counter));
+
+            }
+
+        });
+
+        decrement.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+
+                int counter = Integer.parseInt(count.getText().toString());
+                counter -= 1;
                 count.setText(String.valueOf(counter));
 
             }
